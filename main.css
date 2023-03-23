@@ -118,7 +118,7 @@ button {
 .summary__scores {
   display: flex;
   flex-direction: column;
-  row-gap: 0.8rem;
+  row-gap: 1rem;
 }
 
 .summary__score {
@@ -197,7 +197,7 @@ button {
 }
 
 .attribution {
-  font-size: 11px;
+  font-size: 0.7rem;
   text-align: center;
 }
 
