@@ -17,3 +17,70 @@
   --color-lavender: hsl(241, 100%, 89%);
   --color-dark-blue: hsl(224, 30%, 27%);
 }
+
+body {
+  min-height: 100vh;
+}
+
+.results {
+}
+
+.results__title {
+}
+
+.results__performance {
+}
+
+.results__score {
+}
+
+.results__total {
+}
+
+.results__description {
+}
+
+.results__summary {
+}
+
+.results__ranking {
+}
+
+.summary {
+}
+
+.summary__title {
+}
+
+.summary__scores {
+}
+
+.summary__score {
+}
+
+.summary__score--red {
+}
+
+.summary__score--yellow {
+}
+
+.summary__score--green {
+}
+
+.summary__score--blue {
+}
+
+.summary__header {
+}
+
+.summary__performance {
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
