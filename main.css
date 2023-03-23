@@ -12,10 +12,23 @@
   font-size: 18px;
   font-family: "Hanken Grotesk", "Helvetica Neue";
 
-  --color-white: hsl(0, 0%, 100%);
-  --color-pale-blue: hsl(221, 100%, 96%);
-  --color-lavender: hsl(241, 100%, 89%);
-  --color-dark-blue: hsl(224, 30%, 27%);
+  /* Primary */
+  --color-light-red: 0, 100%, 67%;
+  --color-orange-yellow: 39, 100%, 56%;
+  --color-green-teal: 166, 100%, 37%;
+  --color-cobalt-blue: 234, 85%, 45%;
+
+  /* Gradients */
+  --color-light-slate-blue: 252, 100%, 67%;
+  --color-light-royal-blue: 241, 81%, 54%;
+  --color-violet-blue: 256, 72%, 46%;
+  --color-persian-blue: 241, 72%, 46%;
+
+  /* Neutral */
+  --color-white: 0, 0%, 100%;
+  --color-pale-blue: 221, 100%, 96%;
+  --color-lavender: 241, 100%, 89%;
+  --color-dark-blue: 224, 30%, 27%;
 }
 
 body {
@@ -23,27 +36,66 @@ body {
 }
 
 .results {
+  background: linear-gradient(
+    hsla(var(--color-light-slate-blue), 1),
+    hsla(var(--color-light-royal-blue), 1)
+  );
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
+  padding-inline: 2.5rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 1.5rem;
 }
 
 .results__title {
+  font-size: 1rem;
+  color: hsla(var(--color-lavender), 1);
 }
 
 .results__performance {
+  width: 8rem;
+  aspect-ratio: 1/1;
+  background: linear-gradient(
+    hsla(var(--color-persian-blue), 0.7),
+    hsla(var(--color-violet-blue), 0.3)
+  );
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .results__score {
+  color: hsla(var(--color-white), 1);
+  font-size: 3rem;
+  font-weight: 700;
 }
 
 .results__total {
+  font-size: 1rem;
+  color: hsla(var(--color-lavender), 0.5);
 }
 
 .results__description {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.5rem;
 }
 
 .results__summary {
+  font-size: 1.4rem;
+  color: hsla(var(--color-white), 1);
 }
 
 .results__ranking {
+  font-size: 0.95rem;
+  color: hsla(var(--color-lavender), 0.9);
 }
 
 .summary {
