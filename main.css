@@ -35,6 +35,11 @@ body {
   min-height: 100vh;
 }
 
+button {
+  font-family: "Hanken Grotesk", "Helvetica Neue";
+  letter-spacing: 0.01rem;
+}
+
 .results {
   background: linear-gradient(
     hsla(var(--color-light-slate-blue), 1),
@@ -99,33 +104,96 @@ body {
 }
 
 .summary {
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1.5rem;
 }
 
 .summary__title {
+  font-size: 1.2rem;
+  color: hsla(var(--color-dark-blue), 1);
 }
 
 .summary__scores {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.8rem;
 }
 
 .summary__score {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  column-gap: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.summary__score .summary__header img {
+  width: 1.2rem;
+}
+
+.summary__score .summary__header p {
+  font-weight: 700;
 }
 
 .summary__score--red {
+  background-color: hsla(var(--color-light-red), 0.1);
+}
+
+.summary__score--red .summary__header p {
+  color: hsla(var(--color-light-red), 1);
 }
 
 .summary__score--yellow {
+  background-color: hsla(var(--color-orange-yellow), 0.1);
+}
+
+.summary__score--yellow .summary__header p {
+  color: hsla(var(--color-orange-yellow), 1);
 }
 
 .summary__score--green {
+  background-color: hsla(var(--color-green-teal), 0.1);
+}
+
+.summary__score--green .summary__header p {
+  color: hsla(var(--color-green-teal), 1);
 }
 
 .summary__score--blue {
+  background-color: hsla(var(--color-cobalt-blue), 0.1);
+}
+
+.summary__score--blue .summary__header p {
+  color: hsla(var(--color-cobalt-blue), 1);
 }
 
 .summary__header {
+  display: flex;
+  column-gap: 0.7rem;
 }
 
 .summary__performance {
+  font-size: 1rem;
+  font-weight: 700;
+  color: hsla(var(--color-dark-blue), 0.6);
+}
+
+.summary__performance span {
+  font-weight: 800;
+  color: hsla(var(--color-dark-blue), 1);
+}
+
+.summary__continue {
+  padding-block: 1rem;
+  background-color: hsla(var(--color-dark-blue), 1);
+  border: none;
+  border-radius: 2rem;
+  color: hsla(var(--color-white), 1);
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 .attribution {
