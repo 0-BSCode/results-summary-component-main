@@ -1,0 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 18px;
+  font-family: "Hanken Grotesk", "Helvetica Neue";
+
+  --color-white: hsl(0, 0%, 100%);
+  --color-pale-blue: hsl(221, 100%, 96%);
+  --color-lavender: hsl(241, 100%, 89%);
+  --color-dark-blue: hsl(224, 30%, 27%);
+}
