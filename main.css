@@ -247,7 +247,7 @@ button:hover {
   }
 
   main {
-    width: 38rem;
+    width: 40rem;
     display: flex;
     box-shadow: 0 0 1rem 1rem hsla(var(--color-pale-blue), 1);
     border-radius: 1.5rem;
@@ -292,6 +292,18 @@ button:hover {
   }
 
   .results__ranking {
-    font-size: 1rem;
+    font-size: 1.05rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    font-size: 19px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  :root {
+    font-size: 20px;
   }
 }
