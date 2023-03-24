@@ -38,6 +38,15 @@ body {
 button {
   font-family: "Hanken Grotesk", "Helvetica Neue";
   letter-spacing: 0.01rem;
+  transition: all 0.2s;
+}
+
+button:hover {
+  cursor: pointer;
+  background: linear-gradient(
+    hsla(var(--color-light-slate-blue), 1),
+    hsla(var(--color-light-royal-blue), 1)
+  );
 }
 
 .results {
@@ -203,4 +212,84 @@ button {
 
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media screen and (min-width: 480px) {
+  :root {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 512px) {
+  :root {
+    font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  :root {
+    font-size: 36px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  :root {
+    font-size: 18px;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  main {
+    width: 38rem;
+    display: flex;
+    box-shadow: 0 0 1rem 1rem hsla(var(--color-pale-blue), 1);
+    border-radius: 1.5rem;
+  }
+
+  .results,
+  .summary {
+    border-radius: inherit;
+    flex-basis: 0;
+    padding-top: 2rem;
+  }
+
+  .results {
+    justify-content: space-between;
+    flex-grow: 4.4;
+  }
+
+  .summary {
+    flex-grow: 5;
+    padding-bottom: 2.5rem;
+  }
+
+  .results__title,
+  .summary__title {
+    font-size: 1.3rem;
+  }
+
+  .results__performance {
+    width: 10rem;
+  }
+
+  .results__score {
+    font-size: 3.5rem;
+  }
+
+  .results__description {
+    row-gap: 0.8rem;
+  }
+
+  .results__summary {
+    font-size: 1.7rem;
+  }
+
+  .results__ranking {
+    font-size: 1rem;
+  }
 }
