@@ -206,6 +206,8 @@ button:hover {
 }
 
 .attribution {
+  position: absolute;
+  bottom: 0;
   font-size: 0.7rem;
   text-align: center;
 }
